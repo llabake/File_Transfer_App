@@ -1,6 +1,11 @@
 # File Transfer App
 File Transfer App lets the users transfer files from and to a remote server.
 
+
+[![Coverage Status](https://coveralls.io/repos/github/llabake/file_transfer_app/badge.svg?branch=develop)](https://coveralls.io/github/llabake/file_transfer_app?branch=develop)
+[![Maintainability](https://api.codeclimate.com/v1/badges/96da14f715ca808c5351/maintainability)](https://codeclimate.com/github/llabake/file_transfer_app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/96da14f715ca808c5351/test_coverage)](https://codeclimate.com/github/llabake/file_transfer_app/test_coverage)
+[![CircleCI](https://circleci.com/gh/llabake/file_transfer_app/tree/develop.svg?style=svg)](https://circleci.com/gh/llabake/file_transfer_app/tree/develop)
 ## Requirements
 
 #### Ruby
@@ -9,22 +14,22 @@ This application uses Ruby version `2.5.1`. To install use `rvm` or `rbenv`.
 
 * RVM
 
-        rvm install 2.5.1
-        rvm use 2.5.1
-    - To set Ruby `2.5.1` as the default Ruby version for your computer, run 
+        rvm install 2.6.2
+        rvm use 2.6.2
+    - To set Ruby `2.6.2` as the default Ruby version for your computer, run 
         
-            rvm use 2.5.1 --default
+            rvm use 2.6.2 --default
 
 * Rbenv
 
-        rbenv install 2.5.1
-    - To switch to `2.5.1` temporarily for this project, use 
+        rbenv install 2.6.2
+    - To switch to `2.6.2` temporarily for this project, use 
             
-            rbenv local 2.5.1
+            rbenv local 2.6.2
     
     - To use this version as the default Ruby version for your global environment, use 
             
-            rbenv global 2.5.1
+            rbenv global 2.6.2
 
 #### Bundler
 
