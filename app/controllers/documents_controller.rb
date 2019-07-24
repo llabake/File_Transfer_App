@@ -1,11 +1,16 @@
+require "down"
+
 class DocumentsController < ApplicationController
-  before_action :set_document, only: %i[show edit update destroy]
+  before_action :set_document, only: %i[edit update destroy ]
 
   def index
-    @documents = Document.all
+    @documents = current_user.documents.with_attached_files
   end
 
-  def show; end
+  def show
+    @document = current_user.documents
+                    .with_attached_files.find_by(id: params[:id])
+  end
 
   def new
     @document = Document.new
