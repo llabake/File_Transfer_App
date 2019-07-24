@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  Name: <%= @document.name %>
+</h3>
+<!--<ul>-->
+  <%# @document.files.each do |file| %>
+<!--    <li>-->
+      <%#= image_tag file.preview(resize_to_limit: [100, 100]) %>
+<!--    </li>-->
+<!--    <li>seni</li>-->
+  <%# end %>
+<!--</ul>-->
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
